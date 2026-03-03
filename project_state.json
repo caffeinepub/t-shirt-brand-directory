@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "A website aggregating t-shirt brands with links and pricing information",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Hero banner image featuring trendy t-shirt designs in a collage style with modern aesthetic (hero-banner.dim_1200x400.png)\n- Placeholder brand logo image for brands without logos, minimalist design (placeholder-brand.dim_200x200.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-frontend-page-displaying-all-t-shirt-brands-in-a-grid-or-list-layout",
+      "title": "Create a frontend page displaying all t-shirt brands in a grid or list layout",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-display-brand-name-clickable-link-to-brand-website-and-price-range-for-each-t-shirt-brand",
+      "title": "Display brand name, clickable link to brand website, and price range for each t-shirt brand",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-form-to-add-new-t-shirt-brands-with-fields-for-brand-name-website-url-and-price-range",
+      "title": "Implement a form to add new t-shirt brands with fields for brand name, website URL, and price range",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-creative-modern-visual-theme-with-consistent-colors-typography-and-layout-throughout-the-website-that-reflects-a-retail-fashion-aesthetic",
+      "title": "Apply a creative, modern visual theme with consistent colors, typography, and layout throughout the website that reflects a retail/fashion aesthetic",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Display multiple t-shirt brands on the website",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Show links to each t-shirt brand",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Display pricing information for t-shirts from each brand",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Create a backend data model to store t-shirt brand information including brand name, website URL, and price range",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Implement backend methods to add, retrieve, and list all t-shirt brands",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "status": "pending"
+    }
+  ],
+  "projectName": "T-Shirt Brand Directory",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

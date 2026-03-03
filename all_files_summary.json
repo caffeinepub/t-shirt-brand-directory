@@ -1,0 +1,21 @@
+{
+  "backend/main.mo": "Motoko actor implementing a brand directory with CRUD operations for t-shirt brands, storing brand name, website, and price range with auto-incrementing IDs.",
+  "feature_evidence.json": "Feature evidence report documenting four implemented features: brand listing page, brand card display, add brand form, and modern fashion-themed styling.",
+  "frontend-file-summaries.txt": "JSON-formatted summaries of frontend files describing the React app structure with TanStack Router, brand management UI, and fashion-forward styling.",
+  "frontend/index.css": "Tailwind CSS base styles defining OKLCH color system variables for light and dark modes with a neutral grayscale palette.",
+  "frontend/index.html": "HTML entry point for the T-Shirt Brand Directory app with root div and module script reference.",
+  "frontend/src/App.tsx": "Root React component configuring TanStack Router with a layout wrapper and brands page as the index route.",
+  "frontend/src/components/AddBrandForm.tsx": "Form component with validation for adding new brands, accepting name, website URL, and min/max price inputs with error handling.",
+  "frontend/src/components/BrandCard.tsx": "Card component displaying brand logo placeholder, name, price range badge, website link, and visit button with hover effects.",
+  "frontend/src/components/Footer.tsx": "Footer component showing copyright, current year, and attribution link to caffeine.ai with UTM tracking parameters.",
+  "frontend/src/components/Header.tsx": "Sticky header with shopping bag icon, T-Shirt Hub branding, and subtitle in a backdrop-blurred navigation bar.",
+  "frontend/src/components/Layout.tsx": "Layout wrapper providing header, main content outlet, and footer structure for all pages.",
+  "frontend/src/hooks/useActor.ts": "React Query hook managing ICP actor creation with Internet Identity authentication, returning authenticated or anonymous actor based on login state.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Context provider and hook for Internet Identity authentication, managing login state, identity storage, and AuthClient lifecycle with configurable options.",
+  "frontend/src/hooks/useQueries.ts": "Defines React Query hooks for fetching all brands (useGetAllBrands) and adding a new brand (useAddBrand) using the actor from useActor hook.",
+  "frontend/src/index.css": "Tailwind CSS configuration with custom CSS variables for light and dark themes, defining colors for UI components using OKLCH color space.",
+  "frontend/src/main.tsx": "Application entry point that sets up React Query, Internet Identity provider, and renders the root App component.",
+  "frontend/src/pages/BrandsPage.tsx": "Main brands page component displaying a hero banner, grid of brand cards, and a dialog with AddBrandForm for adding new brands.",
+  "frontend/tailwind.config.js": "Tailwind configuration defining custom theme extensions including OKLCH color system, typography, container settings, animations, and custom shadows.",
+  "project_state.json": "Project metadata tracking completed features (brand display, add form, modern theme) and pending requirements for backend data model and methods."
+}

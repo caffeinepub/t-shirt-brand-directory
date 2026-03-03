@@ -1,0 +1,12 @@
+{
+  "frontend/src/App.tsx": "Main application component that sets up TanStack Router with a root layout and brands page as the default route.",
+  "frontend/src/components/Layout.tsx": "Layout wrapper component that provides consistent header and footer structure with an outlet for page content.",
+  "frontend/src/components/Header.tsx": "Application header with branding, logo, and title displayed in a sticky navigation bar.",
+  "frontend/src/components/Footer.tsx": "Footer component with copyright information and attribution link to caffeine.ai with UTM tracking.",
+  "frontend/src/pages/BrandsPage.tsx": "Main brands listing page featuring a hero banner, brand grid display, loading states, empty state, and dialog for adding new brands.",
+  "frontend/src/components/BrandCard.tsx": "Reusable card component displaying individual brand information including logo, name, price range, and website link with hover effects.",
+  "frontend/src/components/AddBrandForm.tsx": "Form component for adding new brands with validation for name, URL format, and numeric price ranges.",
+  "frontend/src/hooks/useQueries.ts": "Custom React Query hooks for fetching all brands and adding new brands with automatic cache invalidation.",
+  "frontend/src/index.css": "Global styles with OKLCH color system featuring a vibrant purple/pink fashion-forward palette for light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration with custom font families, extended color tokens, border radius, and shadow utilities for the fashion retail aesthetic."
+}

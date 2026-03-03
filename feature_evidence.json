@@ -1,0 +1,80 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-frontend-page-displaying-all-t-shirt-brands-in-a-grid-or-list-layout",
+      "featureTitle": "Create a frontend page displaying all t-shirt brands in a grid or list layout",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/BrandsPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-display-brand-name-clickable-link-to-brand-website-and-price-range-for-each-t-shirt-brand",
+      "featureTitle": "Display brand name, clickable link to brand website, and price range for each t-shirt brand",
+      "files": [
+        "frontend/src/components/BrandCard.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-form-to-add-new-t-shirt-brands-with-fields-for-brand-name-website-url-and-price-range",
+      "featureTitle": "Implement a form to add new t-shirt brands with fields for brand name, website URL, and price range",
+      "files": [
+        "frontend/src/components/AddBrandForm.tsx",
+        "frontend/src/pages/BrandsPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-a-creative-modern-visual-theme-with-consistent-colors-typography-and-layout-throughout-the-website-that-reflects-a-retail-fashion-aesthetic",
+      "featureTitle": "Apply a creative, modern visual theme with consistent colors, typography, and layout throughout the website that reflects a retail/fashion aesthetic",
+      "files": [
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

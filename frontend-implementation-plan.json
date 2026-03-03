@@ -1,0 +1,91 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "T-Shirt Hub - Brand Aggregator Frontend",
+  "requirements": [
+    {
+      "id": "REQ-3",
+      "summary": "Create a frontend page displaying all t-shirt brands in a grid or list layout",
+      "acceptanceCriteria": [
+        "Page displays all t-shirt brands",
+        "Layout is responsive and works on mobile and desktop",
+        "Brands are presented in an organized, scannable format"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/BrandsPage.tsx",
+          "operation": "create",
+          "description": "Create the main brands listing page that fetches all brands from the backend using getAllBrands() and displays them in a responsive grid layout. Integrate the hero banner image from frontend/public/assets/generated/hero-banner.dim_1200x400.png at the top of the page."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the BrandsPage component as the main route in the application router, making it the default landing page at '/'."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Display brand name, clickable link to brand website, and price range for each t-shirt brand",
+      "acceptanceCriteria": [
+        "Each brand card shows the brand name prominently",
+        "Website URL is displayed as a clickable link that opens in a new tab",
+        "Price range is clearly displayed for each brand",
+        "Links are functional and properly formatted"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/BrandCard.tsx",
+          "operation": "create",
+          "description": "Create a reusable BrandCard component that displays a single brand's information including name, website link (opening in new tab with rel='noopener noreferrer'), and price range. Use the shadcn-ui Card component for consistent styling. Include the placeholder brand logo from frontend/public/assets/generated/placeholder-brand.dim_200x200.png as a visual element in each card."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Implement a form to add new t-shirt brands with fields for brand name, website URL, and price range",
+      "acceptanceCriteria": [
+        "Form includes input field for brand name",
+        "Form includes input field for website URL",
+        "Form includes fields for minimum and maximum price",
+        "Form validates URL format",
+        "Form validates price as numeric values",
+        "Successfully submitted brands appear in the brand list immediately"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/AddBrandForm.tsx",
+          "operation": "create",
+          "description": "Create an AddBrandForm component with controlled inputs for brand name, website URL, and price range (min and max). Use shadcn-ui Form, Input, and Button components. Implement client-side validation for URL format and numeric price values. On successful submission, call the backend addBrand() method and refresh the brands list or update parent state to show the new brand immediately."
+        },
+        {
+          "path": "frontend/src/pages/BrandsPage.tsx",
+          "operation": "modify",
+          "description": "Integrate the AddBrandForm component into the BrandsPage, positioning it above or beside the brands grid. Implement state management to refresh the brand list after a successful form submission."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Apply a creative, modern visual theme with consistent colors, typography, and layout throughout the website that reflects a retail/fashion aesthetic",
+      "acceptanceCriteria": [
+        "Cohesive color palette is applied consistently",
+        "Typography choices enhance readability and brand presentation",
+        "Layout design feels modern and appropriate for a fashion/retail context",
+        "Visual hierarchy guides users through brand information effectively"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Define a modern fashion/retail color palette using CSS custom properties (primary, secondary, accent colors suitable for a t-shirt brand aggregator). Ensure typography settings use clean, modern fonts that enhance readability and reflect a retail aesthetic."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend Tailwind configuration with custom theme colors, spacing, and typography that align with the retail/fashion aesthetic. Configure design tokens that support the visual hierarchy and modern layout requirements."
+        }
+      ]
+    }
+  ]
+}
